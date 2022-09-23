@@ -25,9 +25,23 @@ while(i < 3 ){
 
     if(humor = 1 ){
         qtdCalmas++;
+   }if(sexo== 2 && humor==2){
+        qdMNervosas++
+    }if(sexo== 1 && humor==1){
+        qdOcalmos++;
+    }if (humor==3 && sexo ==1){
+        qdHAgressivos++
+    }if (humor==2 && idade>40){
+        qdNervosos40++
+    }if(humor==1 && idade <18){
+        qdCalmos18++
     }
-    if(s)
 
-    i++
-
+    i++;
 }
+console.log(`\nO total de pessoas calmas é ${qdCalmas}`);
+console.log(`\nO total de mulheres nervosas é ${qdMNervosas}`);
+console.log(`\nO total de OUTROS calmes é ${qdOcalmos}`);
+console.log(`\nO total de homens agressivos é ${qdCalmas}`);
+console.log(`\nO total de pessoas nervosas acima dos 40 anos é ${qdNervosos40}`);
+console.log(`\nO total de pessoas calmas acima dos 18 é ${qdCalmos18}`);
