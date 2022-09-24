@@ -1,10 +1,16 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-n = 0
-soma = 0
-soma = soma + 1
-do{let nString = prompt('Diga um número: ')
-   let n = Number(nString)
+let total = 0
+let n1 = 0
 
-}while (n = 0) 
-    console.log(`Soma dos números: ${soma}`)
+n1 = parseInt(prompt(`Digita um numero do teclado:  `));
+
+do{
+    n1 = parseInt(prompt('Digita um numero do teclado:  '));
+
+    if (n1>0){
+        total += n1
+    }
+}while(n1!=0)
+
+console.log(`A soma dos valores é ${total}`)
